@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 count = 0
 retry_limit = 3
-lock_file = open('lockfile','w+')
+lock_file = open('lockfile','a+')
 userinfo = open('userinfo','r')
 while count < retry_limit:
     username = raw_input("Enter your username:")
